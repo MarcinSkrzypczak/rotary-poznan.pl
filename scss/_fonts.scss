@@ -1,0 +1,63 @@
+@mixin hyphens($value){
+  -webkit-hyphens: $value;
+  -ms-hyphens: $value;
+  hyphens: $value;
+}
+
+@mixin rotary{
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  @media all and (max-width: 511px){
+    font-size: 9vw;
+  }
+}
+
+@mixin claim-font{
+  font-size: 64px;
+  font-weight: 100;
+  letter-spacing: -0.06rem;
+  line-height: 1.1;
+  @media all and (orientation: portrait) and (max-width: 460px){
+    font-size: 9vw;
+    line-height: 1.2;
+  }
+  @media all and (orientation: landscape) and (max-width: 740px){
+    font-size: 7vw;
+    line-height: 1.2;
+  }
+}
+
+@mixin chapter{
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+@mixin copy{
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  font-weight: 100;
+}
+
+@mixin more{
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+@mixin special-font{
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+@mixin friends-font {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}

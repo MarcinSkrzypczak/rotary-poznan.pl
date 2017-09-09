@@ -1,0 +1,104 @@
+@mixin partner-logo($position){
+  width: 100%;
+  height: 50px;
+  background: url('../img/rotarysprite.png');
+  background-position: 0px -#{$position}px;
+  background-repeat: no-repeat;
+
+}
+
+.partner-item, .friend{
+  &:link, &:visited{
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.hanse-logo{
+  @include partner-logo(0);
+}
+
+.nepal-logo{
+  @include partner-logo(50);
+}
+
+.wkk-logo{
+  @include partner-logo(100);
+}
+
+.trust-logo{
+  @include partner-logo(150);
+}
+
+.marathon-logo{
+  @include partner-logo(200);
+}
+
+.allpresan-logo{
+  @include partner-logo(250);
+}
+
+.kreisel-logo{
+  @include partner-logo(300);
+}
+
+.uep-logo{
+  @include partner-logo(350);
+}
+
+.lech-logo{
+  @include partner-logo(400);
+}
+
+.veolia-logo{
+  @include partner-logo(450);
+}
+
+
+.aquanet-logo{
+  @include partner-logo(500);
+}
+
+.bmw-logo{
+  @include partner-logo(550);
+}
+
+.uam-logo{
+  @include partner-logo(600);
+}
+
+.bazar-logo{
+  @include partner-logo(650);
+}
+
+.sunnyline-logo{
+  @include partner-logo(700);
+}
+
+.teatr-logo{
+  @include partner-logo(750);
+}
+
+.paso-logo{
+  @include partner-logo(800);
+}
+
+.wieniawski-logo{
+  @include partner-logo(850);
+}
+
+.atis-logo{
+  height: 50px;
+  width: 100%;
+  border-color: #fff;
+}
+
+.filipiak-logo{
+  @include partner-logo(950);
+}
+
+.serafitki-logo{
+  height: 50px;
+  width: 100%;
+  border-color: #fff;
+}

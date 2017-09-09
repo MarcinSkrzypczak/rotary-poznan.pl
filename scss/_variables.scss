@@ -1,0 +1,13 @@
+$paddings: (
+  chapter: 20rem,
+  partners: 3rem,
+  copy: 1em,
+  reset: 0,
+  friend: 0.5em
+);
+
+@mixin flex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
