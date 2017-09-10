@@ -1,3 +1,11 @@
+// preloader
+
+$('html').addClass('js');
+
+$(window).on("load", function() {
+  $("#loader-wrapper").fadeOut();
+});
+
 // body & home page fade-in
 
 $(function() {
@@ -139,7 +147,6 @@ $('document').ready(function(){
     fading($('.about').next());
     fading($('.calendar').next());
     fading($('.actions').next());
-    fading($('div.video'));
     fading($('a.partner-item'));
     fading($('#friends'));
   });

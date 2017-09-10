@@ -3,6 +3,40 @@
 @import "reset";
 @import "variables";
 
+// preloader
+
+.js .load, .js #loader-wrapper {
+  display: block;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000000;
+  background: #efefef;
+  display: none;
+  div.load{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      height: 160px;
+      width: auto;
+      animation: arrow-spin 4s 0s infinite;
+    }
+  }
+}
+
+@keyframes arrow-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 // body & home page fade-in
 body.fade-in, div.left-box.fade-in, div.right-box.fade-in {
   opacity: 0;
@@ -20,11 +54,11 @@ div.left-box, div.right-box {
 }
 
 //chapters fade-in
-#about .col-md-10, #calendar .col-md-10, #actions .col-md-10, div.video, #partners .partner-item, #friends {
+#about .col-md-10, #calendar .col-md-10, #actions .col-md-10, #partners .partner-item, #friends {
   opacity: 1;
   transition: 1s opacity 0.5s;
 }
-#about .col-md-10.fading, #calendar .col-md-10.fading, #actions .col-md-10.fading, div.video.fading, #partners .partner-item.fading, #friends.fading {
+#about .col-md-10.fading, #calendar .col-md-10.fading, #actions .col-md-10.fading, #partners .partner-item.fading, #friends.fading {
   opacity: 0;
   transition: 1s opacity 0.5s;
 }
