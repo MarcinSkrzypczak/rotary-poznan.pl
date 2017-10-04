@@ -56,7 +56,7 @@ $('document').ready(function(){
       $('div.overlay').toggleClass('closed');
       $('#hamburger-icon').toggleClass('active');
     }
-    if(document.body.scrollTop > $(window).height()){
+    if($(window).scrollTop() > $(window).height()){
       $('div.mini-nav').css("position", "fixed");
     } else {
       $('div.mini-nav').css("position", "static");
